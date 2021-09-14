@@ -1,0 +1,2 @@
+$gtk.console.close
+$gtk.console.close
