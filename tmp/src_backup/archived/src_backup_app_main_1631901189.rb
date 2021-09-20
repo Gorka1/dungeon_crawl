@@ -8,4 +8,4 @@ $gtk.reset
 # -make a way to have maps
 require 'app/player.rb'
 require 'app/game.rb'
-require 'app/tick.rb'
+require 'tick.rb'

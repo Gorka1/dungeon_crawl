@@ -1,2 +1,8 @@
+$gtk.reset seed: 1631901209
+$gtk.grep_source [".main_player", '']
 $gtk.console.close
-$gtk.console.close
+$gtk.reset seed: 1631896971
+$gtk.reset seed: 1631897184
+$gtk.reset seed: 1631900765
+$gtk.reset seed: 1631900808
+$gtk.reset seed: 1631901189
