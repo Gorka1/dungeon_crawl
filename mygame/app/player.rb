@@ -1,4 +1,6 @@
 class PlayerObj
+  attr_accessor :x_pos, :y_pos, :size
+
     def initialize
       @x_pos = 0
       @y_pos = 0

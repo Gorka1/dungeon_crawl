@@ -1,3 +1,14 @@
+$gtk.reset seed: 1632887022
+$gtk.reset seed: 1632886979
+$gtk.reset seed: 1632871127
+$gtk.grep_source [".args", '']
+$gtk.reset seed: 1632850664
+$gtk.reset seed: 1632850609
+$gtk.reset seed: 1632850603
+$gtk.reset seed: 1632850119
+$gtk.reset seed: 1632849947
+$gtk.reset seed: 1632849173
+$gtk.reset seed: 1632849056
 $gtk.reset seed: 1631901209
 $gtk.grep_source [".main_player", '']
 $gtk.console.close
@@ -6,3 +17,7 @@ $gtk.reset seed: 1631897184
 $gtk.reset seed: 1631900765
 $gtk.reset seed: 1631900808
 $gtk.reset seed: 1631901189
+$gtk.reset seed: 1632849115
+:trace_tip
+$gtk.reset seed: 1632849914
+$gtk.reset seed: 1632850129

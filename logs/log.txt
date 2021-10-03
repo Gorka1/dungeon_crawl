@@ -1,4 +1,5 @@
 DragonRuby GTK Log Messages. Set $gtk.log_level = :off to disable logging to the Console/HUD (log messages will still be written here). Log options are: :on, :off.
+* INFO: Marked app/main.rb for reload. (-1)
 
 * INFO: Try using ~trace!~
 If the exception isn't helpful, try putting ~trace!~ near where you think the error occurred.

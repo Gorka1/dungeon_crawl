@@ -1,5 +1,4 @@
 $gtk.reset
-#$dragon.require('app/player.rb')
 # TODO:
 # -Make a top-down movement system
 # -make a camera
@@ -7,5 +6,6 @@ $gtk.reset
 #   -changes setting based on player location
 # -make a way to have maps
 require 'app/player.rb'
+require 'app/level_gen.rb'
 require 'app/game.rb'
 require 'app/tick.rb'
