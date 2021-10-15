@@ -35,6 +35,7 @@ def tick args
   args.outputs[:scene].w = args.state.world.w
   args.outputs[:scene].h = args.state.world.h
 
+  #gen_level("test_lvl.txt", args)
   #blocks
   args.outputs[:scene].solids << { x: 0, y: 0, w: args.state.world.w, h: args.state.world.h, r: 20, g: 60, b: 80 }
   args.outputs[:scene].solids << { x: 200, y: 50, w: 50, h: 70, r: 100, g: 20, b: 120 }

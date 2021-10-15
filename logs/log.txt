@@ -1,10 +1,31 @@
 DragonRuby GTK Log Messages. Set $gtk.log_level = :off to disable logging to the Console/HUD (log messages will still be written here). Log options are: :on, :off.
 * INFO: Marked app/main.rb for reload. (-1)
+* INFO: Game state and exception will be written to exceptions/game_state_0.txt and exceptions/current.txt.
 
-* INFO: Try using ~trace!~
-If the exception isn't helpful, try putting ~trace!~ near where you think the error occurred.
-Also consider coming to the Discord (we're here to help): [[DragonRuby Discord][http://discord.dragonruby.org]].
+* WARNING: GameObj does not support serialization. Returning nil.
+Please override the :serialize method and return a hash so that
+Class can be persisted to disk in the event of an exception.
+Here is an example of what you need to do:
+#+begin_src ruby
+class GameObj
+  # 1. Create a serialize method that returns a hash with all of
+  #    the values you care about.
+  def serialize
+    { main_player: main_player }
+  end
 
-[Message ID: [:trace_tip]]
+  # 2. Override the inspect method and return ~serialize.to_s~.
+  def inspect
+    serialize.to_s
+  end
 
-* INFO: Game state and exception will be written to exceptions/game_state_-1.txt and exceptions/current.txt.
+  # 3. Override to_s and return ~serialize.to_s~.
+  def to_s
+    serialize.to_s
+  end
+end
+#+end_src
+
+[Message ID: []]
+
+* INFO: Marked app/tick.rb for reload. (5305)
